@@ -1272,7 +1272,7 @@ dataall, metaall, labels, names1, names2 = get_normalized_training_data(normed_t
 fpickle2 = coeffs_file
 if not glob.glob(fpickle2):
   train(dataall, metaall, 2,  fpickle2, names1, logg_cut= 40.,teff_cut = 0.)
-field = "self_2nd_order_"
+field = "output_"
 
 file_in_test = open(normed_test_data, 'r') 
 testdataall, metaall, labels,  cluster_name,ids = pickle.load(file_in_test)
